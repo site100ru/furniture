@@ -142,7 +142,9 @@
 									</li>
 									<li class="nav-item d-none d-lg-inline">
 										<span class="nav-link">
-											<img src="img/ico/menu-decoration-point.svg">
+											<svg class="menu-decoration" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="6" height="6" rx="2"/>
+											</svg>
 										</span>
 									</li>
 									<li class="nav-item">
@@ -395,7 +397,9 @@
 		</section>
 		<!-- /Action -->
 		
-		<!-- SITE CREATE PORTFOLIO -->
+		
+		
+		<!-- SECTION PORTFOLIO -->
 		<section id="site-create-portfolio" class="text-light" style="padding-block: 60px;">
 			<div class="container">
 				<div class="row">
@@ -554,68 +558,71 @@
 				</div>
 			</div>
 		</section>
+		<!-- END SECTION PORTFOLIO -->
 
-		<!-- Kitchen Carousel 1 -->
-		<div id="kitchenCarousel1Wrapper" style="display: none;">
+		<!-- Portfolio galery wrapper -->
+		<div id="portfolioGalleryWrapper" style="display: none;">
+			
+			
 			<div id="kitchenCarousel1" class="carousel slide" data-bs-ride="false" data-bs-interval="false" style="display: none; position: fixed; top: 0; height: 100%; width: 100%; z-index: 9999;">
 				<div class="carousel-indicators">
-				  <button id="kitchenCarousel1-1" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-				  <button id="kitchenCarousel1-2" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				  <button id="kitchenCarousel1-3" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button id="kitchenCarousel1-1" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+					<button id="kitchenCarousel1-2" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button id="kitchenCarousel1-3" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner h-100">
-				  <div id="kitchenCarousel1-1" class="carousel-item h-100 active">
-					<div class="row align-items-center h-100">
-					  <div class="col text-center">
-						<img data-src="img/portfolio-01.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh;" alt="Кухня 1"/>
-					  </div>
+					<div id="kitchenCarousel1-1" class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img data-src="img/portfolio-01.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh;" alt="Кухня 1"/>
+							</div>
+						</div>
 					</div>
-				  </div>
-				  <div id="kitchenCarousel1-2" class="carousel-item h-100">
-					<div class="row align-items-center h-100">
-					  <div class="col text-center">
-						<img data-src="img/portfolio-01.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh;" alt="Кухня 2"/>
-					  </div>
+					<div id="kitchenCarousel1-2" class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img data-src="img/portfolio-01.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh;" alt="Кухня 2"/>
+							</div>
+						</div>
 					</div>
-				  </div>
-				  <div id="kitchenCarousel1-3" class="carousel-item h-100">
-					<div class="row align-items-center h-100">
-					  <div class="col text-center">
-						<img data-src="img/portfolio-01.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh;" alt="Кухня 3"/>
-					  </div>
+					<div id="kitchenCarousel1-3" class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img data-src="img/portfolio-01.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh;" alt="Кухня 3"/>
+							</div>
+						</div>
 					</div>
-				  </div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Previous</span>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#kitchenCarousel1" data-bs-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Next</span>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
 				</button>
-			  </div>
-			  <button  type="button"  onClick="kitchenCarousel1Close();" class="btn-close btn-close-white" style="position: fixed; top: 25px; right: 25px; z-index: 99999" aria-label="Close"></button>
-	
+			</div>
+			<button  type="button"  onClick="kitchenCarousel1Close();" class="btn-close btn-close-white" style="position: fixed; top: 25px; right: 25px; z-index: 99999" aria-label="Close"></button>
+		
+		
+		
 		</div>
+		
 		<script>
-
 			function kitchenCarousel1On(gal, img) {
-		  var gallery = gal; // Получаем ID галереи
-		  var image = img; // Получаем ID картинки
+				var gallery = gal; // Получаем ID галереи
+				var image = img; // Получаем ID картинки
 	  
-		  // Открываем обертку галереи
-		  document.getElementById( "kitchenCarousel1Wrapper" ).style.display = "block";
+				// Открываем обертку галереи
+				document.getElementById( "portfolioGalleryWrapper" ).style.display = "block";
 
-		  // Открываем галерею
-		  if ( gallery == "kitchenCarousel1" ) { document.getElementById( "kitchenCarousel1" ).style.display = "block"; }
+				// Открываем галерею
+				if ( gallery == "kitchenCarousel1" ) { document.getElementById( "kitchenCarousel1" ).style.display = "block"; }
 			}
 
-
 			function kitchenCarousel1Close() {
-		  document.getElementById("kitchenCarousel1Wrapper").style.display = "none";
-		  
-		  document.getElementById("kitchenCarousel1").style.display = "none";
+				document.getElementById("portfolioGalleryWrapper").style.display = "none";
+				document.getElementById("kitchenCarousel1").style.display = "none";
 			}
 		</script>
 		<!-- Kitchen Carousel 1 -->
@@ -913,6 +920,8 @@
 		</script>
 		<!-- Kitchen Carousel 6 -->
 		<!-- END SITE CREATE PORTFOLIO -->
+		
+		
 		
 		<!-- ABOUT SECTION -->
 		<section class="about-section bg-light py-5">
