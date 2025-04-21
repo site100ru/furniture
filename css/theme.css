@@ -11,7 +11,7 @@
 }
 
 .bg-light {
-	background-color: #f8f9fa;
+	background-color: #f8f9fa; /* Зачем это? */
 }
 /*** END GENERAL ***/
 
@@ -894,6 +894,10 @@ a.navbar-brand {
 
 
 /*** SECTION PORTFOLIO ***/
+.section-portfolio .project-container-2:hover {
+	cursor: pointer;
+}
+
 #myTab .nav-link {
 	font-family: HelveticaNeueCyr-Medium;
 	font-size: 14px;
