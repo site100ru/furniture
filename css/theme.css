@@ -894,10 +894,6 @@ a.navbar-brand {
 
 
 /*** SECTION PORTFOLIO ***/
-.section-portfolio {
-	background-color: rgb(239 235 235);
-}
-
 #myTab .nav-link {
 	font-family: HelveticaNeueCyr-Medium;
 	font-size: 14px;
@@ -1541,7 +1537,7 @@ h6,
     position: relative;
 }
 
-.archive-product-section .project-container-2  img{
+.archive-product-section .project-container-2  img {
 	border-radius: 0.375rem;
 }
 
