@@ -154,7 +154,22 @@ a:hover {
 	font-size: 20px;
 }
 
+/** SVG STYLES **/
 
+svg {
+	fill: var(--corporate-color-1);
+}
+
+.nav-item:has(span) {
+	padding-bottom: 5px;
+}
+
+rect, path {
+	fill: inherit;
+	stroke: inherit;
+}
+
+/** END SVG STYLES **/
 
 /*** BREADCRUMBS ***/
 .breadcrumbs {
@@ -458,6 +473,7 @@ a:hover {
 
 .dropdown-toggle::after {
 	background-image: url(../img/ico/accordion-arrow.svg);
+	filter: invert(69%) sepia(87%) saturate(2224%) hue-rotate(337deg) brightness(92%) contrast(87%);
     background-position: bottom;
     vertical-align: 0;
     margin-left: 14px;
