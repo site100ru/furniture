@@ -1844,7 +1844,7 @@ strong {
 }
 
 .contacts-section-4 .nav-item:has(span) {
-    padding-bottom: 2px;
+	padding: 0;
 }
 
 /* .contacts-section-4 .dropdown-toggle::after {
