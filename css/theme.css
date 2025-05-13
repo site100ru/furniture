@@ -158,6 +158,21 @@ a:hover {
 	font-size: 20px;
 }
 
+.main-home {
+	min-height: 445px;
+}
+
+.home-desc {
+	margin-bottom: 30px;
+}
+
+.home-desc p {
+	font-family: Gilroy-Regular;
+	font-size: clamp(20px, 1.3vw, 24px);
+	line-height: 1.35;
+	color: #ebebeb;
+}
+
 /** SVG STYLES **/
 
 svg {
@@ -892,20 +907,19 @@ a.navbar-brand {
 	cursor: pointer;
 }
 
-#myTab .nav-link {
-	font-family: HelveticaNeueCyr-Medium;
+.my-tab .nav-link {
 	font-size: 14px;
 	text-transform: uppercase;
 	text-align: center;
 	color: #4b4b4b;
 }
 
-#myTab .nav-item:has(span) {
+.my-tab .nav-item:has(span) {
 	padding-bottom: 2px;
 }
 
-#myTab .nav-link.active,
-#myTab .nav-link:hover {
+.my-tab .nav-link.active,
+.my-tab .nav-link:hover {
     color: #DC3545;
 	cursor: pointer;
 }
@@ -2372,6 +2386,12 @@ footer {
 
 }
 
+@media (max-width: 1199.98px) {
+	.main-home {
+		min-height: 340px;
+	}
+}
+
 @media (max-width: 991.98px) {
 	.home-video-section video {
 		top: 0px;
@@ -2402,6 +2422,10 @@ footer {
 
 	.top-menu-tel {
 		color: #4B4B4B;
+	}
+
+	.main-home {
+		min-height: 585px;
 	}
 }	
 
