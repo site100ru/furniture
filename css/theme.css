@@ -500,6 +500,11 @@ rect, path {
     color: #C8C8C8;
 }
 
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--corporate-color-1);
+}
+
 .header-nav-bottom a.nav-link:hover,
 .header-nav-bottom a.nav-link:focus {
     color: var(--corporate-color-1);
@@ -750,16 +755,15 @@ a.navbar-brand {
 /* Home video section */
 
 .home-video-section {
-    background: url(../img/main-home-bg.jpg);
+    background: url(../img/Home\ background-desctop.jpg);
 	background-size: cover;
 	background-position: center;
-	position: absolute; 
-    top: 0; 
-    width: 100%; 
+	position: absolute;  
     height: 100%; 
     z-index: -1;
     min-height: 640px;
 	overflow: hidden;
+	background-repeat: no-repeat;
 }
 
 .home-section-video {
@@ -790,7 +794,7 @@ a.navbar-brand {
 	min-height: 640px;
 	width: 100%;
 	position: fixed;
-	background: url(../img/contact.jpg) no-repeat;
+	background: url(../img/Home\ background-desctop.jpg) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	z-index: -1;
@@ -2388,7 +2392,11 @@ footer {
 
 @media (max-width: 1199.98px) {
 	.main-home {
-		min-height: 340px;
+		min-height: 315px;
+	}
+
+	.home-video-section {
+		height: 640px;
 	}
 }
 
@@ -2427,6 +2435,16 @@ footer {
 	.main-home {
 		min-height: 585px;
 	}
+
+	.home-section-video {
+        height: 515px;
+    }
+
+	/* Home video section */
+	.home-video-section video {
+		width: auto;
+		height: 100%;
+	}
 }	
 
 
@@ -2458,13 +2476,6 @@ footer {
 	.home-section_main {
 		padding-top: 90px;
 		padding-bottom: 50px;
-	}
-
-	/* Home video section */
-	.home-video-section video {
-		width: auto;
-		height: 100%;
-		left: -120%; /* Смещаем видео */
 	}
 	
 	.home-video-section .col {
@@ -2545,17 +2556,14 @@ footer {
 		vertical-align: middle;
 	}
 	/*** END MANUFACTURE SECTION ***/
+
+	/* Home video section */
+	.home-video-section video {
+		left: -120%; /* Смещаем видео */
+	}
 }
 
 @media (max-width: 360px) {
-    .home-video-section {
-        position: relative;
-        height: 550px;
-    }
-    .home-video-section video {
-        top: auto;
-        left: -110%;
-    }
     .home-title {
         font-size: 31px;
     }
@@ -2632,3 +2640,14 @@ footer {
         margin-top: 70px;
     }
 }
+
+/* @media (max-width: 350px) {
+	.home-video-section {
+        position: relative;
+        height: 550px;
+    }
+    .home-video-section video {
+        top: auto;
+        left: -110%;
+    }
+} */
